@@ -1,0 +1,55 @@
+body {
+text-align: center;
+background: url(../texture3b.jpg);
+
+}
+#game {
+background: #9c9;
+padding: 5px;
+}
+/* Define the 3D perspective view and dimension of each card. */
+.card {
+-webkit-perspective: 600;
+width: 113px;
+height: 150px;
+}
+
+.face {
+width: 100%;
+height: 100%;
+position: absolute;
+-webkit-transition: all .3s;
+-webkit-backface-visibility: hidden;
+}
+
+.front {
+background: url(../images/cardback.png);
+z-index: 10;
+}
+
+.back {
+background: url(../images/cardback.png);
+transform: rotate3d(0,1,0,-180deg);
+-webkit-transform: rotate3d(0,1,0,-180deg); /* Safari and Chrome */
+-moz-transform: rotate3d(0,1,0,-180deg);/* Firefox */
+z-index: 8;
+}
+
+.card-flipped .front {
+	transform: rotate3d(0,1,0,180deg);
+	-webkit-transform: rotate3d(0,1,0,180deg); /* Safari and Chrome */
+	-moz-transform: rotate3d(0,1,0,180deg);/* Firefox */
+	z-index: 8;
+}
+.card-flipped .back {
+	transform: rotate3d(0,1,0,0deg);
+	-webkit-transform: rotate3d(0,1,0,0deg);/* Safari and Chrome */
+	-moz-transform: rotate3d(0,1,0,0deg);/* Firefox */
+	z-index: 10;
+}
+.cardAK {
+	background: url(../images/browndino1.png);
+}
+.cardAQ {
+	background: url(../images/browndinoa1.png);
+}

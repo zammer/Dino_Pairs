@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Dino Pairs Game V3</title>
+<link rel="stylesheet" href="css/dinogamev2.css" />
+</head>
+<body>
+<section id="gameStats">
+			<p id="timer">Time: <span class="gameScore"></span></p>
+			<p id="reset"><a class="gameReset" href="">Reset</a></p>
+</section>	
+<section id="game">
+	<section id="gameUI">
+
+					<section id="gameIntro">
+						<p><a id="gamePlay" class="button" 	href="">Play</a></p>
+					</section>
+		
+					<section id="gameComplete">
+							<p id="top">Your time taken was <span class="gameScore"></span>.</p>
+							<p><a class="gameReset button" href="">Play again</a></p>
+					</section>
+					
+					<div id="cards">
+						<div class="card">
+							<div class="face front"></div>
+							<div class="face back"></div>
+						</div> <!-- .card -->
+					</div> <!-- #cards -->
+	</section>
+</section> <!-- #game -->
+<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+<script src="js/dinopairsv3.js"></script>
+</body>
+</html>
