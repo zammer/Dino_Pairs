@@ -104,13 +104,15 @@ zmr.dinoGame = (function(jQ) {
 	
 	var checkPattern = function(){
 		if (isMatchPattern()) {
-			jQ(".card-flipped").removeClass("card-flipped").addClass("card-removed");
-				if(webkitTransistionEnd){
-					jQ(".card-removed").bind("webkitTransitionEnd", removeTookCards);
+			$(".card-flipped").removeClass("card-flipped").addClass("card-removed");
+				if(document.webkitTransitionEnd){
+					$(".card-removed").bind("webkitTransitionEnd",	removeTookCards);
+				}else{
+					removeTookCards();
 				}
 			} else {
-				jQ(".card-flipped").removeClass("card-flipped");
-			}
+			$(".card-flipped").removeClass("card-flipped");
+		}
 	}
 	
 	var isMatchPattern = function(){

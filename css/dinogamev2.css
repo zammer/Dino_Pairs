@@ -110,7 +110,7 @@ body {
 
 
 #gameComplete {
-	background:url(../images/endpage.png) top left no-repeat;
+	background:url(../images/endPage.png) top left no-repeat;
 	padding: 80px 0;
 	text-align: center; 
 	height: 330px;
