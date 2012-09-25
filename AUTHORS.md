@@ -1,4 +1,4 @@
-The following authors have all licensed their contributions to BrowserPairs
+The following authors have all licensed their contributions to BrowserPairs  
 under the licensing terms detailed in LICENSE.
 
 MozTW, Mozilla Taiwan Community
@@ -9,12 +9,12 @@ MozTW, Mozilla Taiwan Community
 * thomasysliu
 
 
-Pictures
-Illustrated by [ECBp](http://blog.yam.com/ECBp/article/44076465)
+Pictures  
+Illustrated by [ECBp](http://blog.yam.com/ECBp/article/44076465)  
 licensed under [CC:BY-NC-SA-3.0-TW](http://creativecommons.org/licenses/by-nc-sa/3.0/tw/)
 
-Music
-Mozilla-Blues, composed by [MGdesigner](http://magicdesign.blogspot.com/)
+Music  
+Mozilla-Blues, composed by [MGdesigner](http://magicdesign.blogspot.com/)  
 licensed under [CC:BY-3.0-TW](http://creativecommons.org/licenses/by/3.0/tw/deed.en)
 
 

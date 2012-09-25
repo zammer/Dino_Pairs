@@ -1,7 +1,7 @@
 Browser Pairs
 
-Copyright (C) 2012 MozTW (Mozilla Taiwan Community) and other contributors
-see AUTHORS for list of contributors
+Copyright (C) 2012 MozTW (Mozilla Taiwan Community) and other contributors,
+see AUTHORS for list of contributors.
 
 
 Browser Pairs is derived of Matt Walker's 'Dino Pairs Game'
