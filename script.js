@@ -213,6 +213,19 @@ function checkPattern() {
 			uiSplash.removeClass('match');
 		});
 		$(".card-flipped").removeClass("card-flipped").addClass("card-removed");
+		$(".card-removed").each(function(index){
+			$(this).css('left', function(index, val) {
+				var left = parseFloat(val);
+				if (left > 350)
+					return ( left + (300 * ((left - 350) / 350))) + 'px';
+				else
+					return ( left - (300 * ((350 - left) / 350))) + 'px';
+			});
+			$(this).css('top', function(index, val) {
+				var top = parseFloat(val);
+				return ( top - 100 - (300 * (top / 300))) + 'px';
+			});
+		});
 		$(".card-removed").bind("webkitTransitionEnd transitionend oTransitionEnd", removeTookCards);
 		if(!decent) { //workaround for IE9
 			removeTookCards();
