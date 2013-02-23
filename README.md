@@ -12,7 +12,7 @@ BrowserPairs is a HTML5 pairs game with support of various devices,
 including mobile phones and tablets, and able to playing while offline.
 
 
-[→ Play Now](http://moztw.org/foxmosa/game/)
+[→ Play Now](http://moztw.org/foxmosa/game/pairs)
 
 
 The game is a demo made by [MozTW](http://moztw.org) (Mozilla Taiwan Community),  
