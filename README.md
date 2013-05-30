@@ -18,7 +18,7 @@ including mobile phones and tablets, and able to playing while offline.
 The game is a demo made by [MozTW](http://moztw.org) (Mozilla Taiwan Community),  
 with love and support of Firefox and [Mozilla's Mission](http://www.mozilla.org/about/mission.html).
 
-
+It is featured in a [Mozilla Workshop] (http://lukasblakk.com/creating-a-mozilla-workshop-for-beginner-hacking-of-mobile-html5-games/)
 
 Credits & License
 -----------------
