@@ -3,8 +3,8 @@
 	margin:0;
 }
 
-/* 
-    it seems no-one implement yet, current default value is min-width: 980px 
+/*
+    it seems no-one implement yet, current default value is min-width: 980px
     if appliable, min-height can prevent card covered in non-enough height screen.
     http://dev.w3.org/csswg/css-device-adapt/
 */
@@ -393,9 +393,32 @@ body {
 	z-index: 8;
 	border-radius: 4px;
 }
-.card:hover .face, .card-flipped .face {
+.face::after {
+	content: "";
+	display: block;
+	height: 100%;
+	-webkit-transition-property: opacity, transform, box-shadow;
+	-webkit-transition-duration: .5s;
+	-webkit-backface-visibility: hidden;
+	-moz-transition-property: opacity, -moz-transform, box-shadow;
+	-moz-transition-duration: .5s;
+	-moz-backface-visibility: hidden;
+	-o-transition-property: opacity, -o-transform, box-shadow;
+	-o-transition-duration: .5s;
+	-o-backface-visibility: hidden;
+	width: 100%
+}
+.card:hover .face::after {
+	box-shadow: 0 0 10px #ccc;
+	opacity: 1;
+}
+.card.card-flipped .face::after {
+	display: none;
+}
+.card-flipped .face {
 	box-shadow: 0 0 10px #ccc;
 }
+
 .card-flipped .front {
 	-webkit-transform: rotate3d(0,1,0,180deg) scale(1.1);
 	-moz-transform: rotate3d(0,1,0,180deg) scale(1.1);
