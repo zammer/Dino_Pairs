@@ -6,6 +6,7 @@ handleEvent:function(a){this.info.className=this.info.className.replace(/ ?appca
 var score;
 var cardsmatched;
 var clicks;
+var highest_score;
 
 var ui = $("#game");
 var uiIntro = $("#gameIntro");
@@ -263,8 +264,13 @@ function EndGame() {
 	clearTimeout(scoreTimeout);
 	playSound('applause');
 	// Define score formula
-	total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
-	$('#score').html('Your score: ' + total_score + '<br>(' + clicks + ' clicks in ' + score + ' seconds)');
+        total_score =  ( 33/(score/60) + 66/(clicks/24) ).toFixed(2);
+        highest_score = window.localStorage.getItem("highest_score") | 0;
+        if(total_score > highest_score){
+            highest_score = total_score;
+            window.localStorage.setItem("highest_score", highest_score);
+        }
+        $('#score').html('Highest Score is '+ highest_score + '<br/>' + 'Your score: ' + total_score + '<br>(' + clicks + ' clicks in ' + score + ' seconds)');
 	ui.addClass('end').removeClass('play');
 	$('.twitter-share-button').remove();
 	$('.facebook-share-button').off('click');
